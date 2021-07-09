@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'wanchuan-blog',
-  domain: 'https://www.notion.so/wanchuan/wanchuan-blog-9340d26d5f134f6d8363704b9a522e55',
+  domain: 'wanchuan.top',
   author: 'wanchuan',
 
   // open graph metadata (optional)
