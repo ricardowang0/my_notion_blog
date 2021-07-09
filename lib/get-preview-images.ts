@@ -26,7 +26,7 @@ export async function getPreviewImages(
   if (!imageDocRefs.length) {
     return {}
   }
-
+  console.log("图片",imageDocRefs[0].path)
   const imageDocs = await db.db.getAll(...imageDocRefs)
   const results = await pMap(imageDocs, async (model, index) => {
     if (model.exists) {

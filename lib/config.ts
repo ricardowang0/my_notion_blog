@@ -146,6 +146,7 @@ function getGoogleApplicationCredentials() {
       'GOOGLE_APPLICATION_CREDENTIALS',
       defaultEnvValueForPreviewImageSupport
     )
+    console.log("Google加密", Buffer.from(googleApplicationCredentialsBase64, 'base64').toString())
 
     return JSON.parse(
       Buffer.from(googleApplicationCredentialsBase64, 'base64').toString()
