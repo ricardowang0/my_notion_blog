@@ -180,8 +180,8 @@ function cleanPageUrlMap(
         `Invalid ${label} value for page "${pageId}": value "${uri}" should be a relative URI that starts with "/"`
       )
     }
-
-    const path = uri.slice(1)
+    console.log("url",uri)
+    const path = uri.slice(0)
 
     return {
       ...acc,
