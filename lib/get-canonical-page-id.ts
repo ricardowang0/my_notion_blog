@@ -23,6 +23,7 @@ export function getCanonicalPageId(
     var pageUni=  getCanonicalPageIdImpl(pageId, recordMap, {
       uuid
     })
-    return pageUni+pageId.split('-')[0]
+    var pageUid =pageId.split('-')[0];
+    return pageUid.length>5?pageUni:pageUni+pageUid
   }
 }
