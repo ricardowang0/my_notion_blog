@@ -20,9 +20,9 @@ export function getCanonicalPageId(
   if (override) {
     return override
   } else {
-    // return getCanonicalPageIdImpl(pageId, recordMap, {
-    //   uuid
-    // })
-    return pageId
+    var pageUni=  getCanonicalPageIdImpl(pageId, recordMap, {
+      uuid
+    })
+    return pageUni+pageId.split('-')[0]
   }
 }
