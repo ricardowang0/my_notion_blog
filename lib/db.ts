@@ -11,5 +11,4 @@ if (config.isPreviewImageSupportEnabled) {
   })
 
   images = db.collection(config.firebaseCollectionImages)
-  console.log("集合",images.listDocuments)
 }

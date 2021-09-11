@@ -146,7 +146,6 @@ function getGoogleApplicationCredentials() {
       'GOOGLE_APPLICATION_CREDENTIALS',
       defaultEnvValueForPreviewImageSupport
     )
-    console.log("Google加密", Buffer.from(googleApplicationCredentialsBase64, 'base64').toString())
 
     return JSON.parse(
       Buffer.from(googleApplicationCredentialsBase64, 'base64').toString()
@@ -181,8 +180,8 @@ function cleanPageUrlMap(
         `Invalid ${label} value for page "${pageId}": value "${uri}" should be a relative URI that starts with "/"`
       )
     }
-    console.log("url",uri)
-    const path = uri.slice(0)
+
+    const path = uri.slice(1)
 
     return {
       ...acc,
