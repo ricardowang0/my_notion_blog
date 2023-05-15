@@ -10,8 +10,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "deploy": "vercel --prod",
     "deps": "run-s deps:*",
@@ -33,7 +33,7 @@
     "got": "^11.8.2",
     "isomorphic-unfetch": "^3.1.0",
     "lqip-modern": "^1.2.0",
-    "next": "^10.2.0",
+    "next": "13.0.3",
     "node-fetch": "^2.6.1",
     "notion-client": "^4.9.7",
     "notion-types": "^4.8.2",
@@ -51,7 +51,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.2.0",
+    "@next/bundle-analyzer": "13.0.3",
     "@types/classnames": "^2.3.1",
     "@types/node": "^15.0.1",
     "@types/node-fetch": "^2.5.10",
