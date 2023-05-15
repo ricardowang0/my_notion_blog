@@ -5,7 +5,16 @@
   "useTabs": false,
   "tabWidth": 2,
   "bracketSpacing": true,
-  "jsxBracketSameLine": false,
+  "bracketSameLine": false,
   "arrowParens": "always",
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "importOrder": [
+    "^(react/(.*)$)|^(react$)|^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "^(@/lib/(.*)$)|^(@/components/(.*)$)|^(@/styles/(.*)$)",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true
 }
