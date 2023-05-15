@@ -10,8 +10,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev",
-    "build": "next build",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
     "start": "next start",
     "deploy": "vercel --prod",
     "deps": "run-s deps:*",
